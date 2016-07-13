@@ -14,12 +14,7 @@
     <!-- 只有(iphone)会识别，禁止对电话号码的自动识别 -->
     <meta name="format-detection" content="telephone=no">
     <!-- (Android)禁止对邮箱自动识别 -->
-    <meta name="format-detection" content="email=no">
-    <!-- 但某些时候，你关闭电话自动识别后，又希望某些电话号码长按时能够链接到 iPhone 的拨号功能和短信功能，你可以使用下面的方法实现： -->
-    <!-- 开启电话功能： -->
-    <!-- <a href="tel:123456">123456</a>  -->
-    <!-- 开启短信功能： -->
-    <!-- <a href="sms:123456">123456</a> -->
+    <meta name="format-detection" content="email=no">    
     
     <!-- 添加智能 App 广告条 Smart App Banner（IOS 6+ Safari）显示app下载地址或打开app -->
     <meta name="apple-itunes-app" content="app-id=myAppStoreID, affiliate-data=myAffiliateData, app-argument=myURL"> 
@@ -75,46 +70,15 @@
     <!-- 网页图标 -->
     <link rel="shortcut icon" href="/favicon.ico">
 
-    <link rel="stylesheet" href="/Public/Home/css/common.css">
-
-    <style>
-        /*禁止文本缩放*/
-        /*当移动设备横竖屏切换时，文本的大小会重新计算，进行相应的缩放，当我们不需要这种情况时，可以选择禁止：*/
-        html {
-        　-webkit-text-size-adjust: 100%;
-        }
-        /*移动端如何清除输入框内阴影*/
-        /*　　在iOS上，输入框默认有内部阴影，但无法使用 box-shadow 来清除，如果不需要阴影，可以这样关闭：*/
-        input,
-        textarea {
-        　　border: 0; /* 方法1 */
-        　　-webkit-appearance: none; /* 方法2 */
-        }
-        /*在iOS上如果你想让一个元素拥有像 Native 的滚动效果，你可以这样做：*/
-        .xxx {
-            overflow: auto; /* auto | scroll */
-            -webkit-overflow-scrolling: touch;
-        }
-        /*移动端禁止选中内容*/
-        /*　　如果你不想用户可以选中页面中的内容，那么你可以在css中禁掉：*/
-        .user-select-none {
-          -webkit-user-select: none;  /* Chrome all / Safari all */
-          -moz-user-select: none;     /* Firefox all （移动端不需要） */
-          -ms-user-select: none;      /* IE 10+ */      
-        }
-        /*移动端取消touch高亮效果*/
-        /*　　在做移动端页面时，会发现所有a标签在触发点击时或者所有设置了伪类 :active 的元素，默认都会在激活状态时，显示高亮框，如果不想要这个高亮，那么你可以通过css以下方法来进行全局的禁止：*/
-        html {
-            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-        }
-        /*如何禁止保存或拷贝图像（IOS）*/
-        /*　　通常当你在手机或者pad上长按图像 img ，会弹出选项 存储图像 或者 拷贝图像，如果你不想让用户这么操作，那么你可以通过以下方法来禁止：*/
-        img { -webkit-touch-callout: none; }
-        
-    </style>
+    <link rel="stylesheet" href="/css/common.css">
 
 </head>
 <body>
+    <!-- 但某些时候，你关闭电话自动识别后，又希望某些电话号码长按时能够链接到 iPhone 的拨号功能和短信功能，你可以使用下面的方法实现： -->
+    <!-- 开启电话功能： -->
+    <a href="tel:123456">123456</a> 
+    <!-- 开启短信功能： -->
+    <a href="sms:123456">123456</a>
     <!-- 该输入域输入内容时，手机键盘为电话号码键盘 -->
     <input type=”tel”>
     <!-- 关闭iOS键盘首字母自动大写 -->
