@@ -72,9 +72,9 @@
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/common.css">
     <!-- <script src="js/vendor/flexible.js"></script> -->
-    <script src="js/vendor/require.js" data-main="js/config.js" defer async="true"></script>
+    <script src="js/vendor/require.js" data-main="js/main.js" defer async="true"></script>
 </head>
-<body>
+<body id="body" style="height: 1000px;">
     <!-- 但某些时候，你关闭电话自动识别后，又希望某些电话号码长按时能够链接到 iPhone 的拨号功能和短信功能，你可以使用下面的方法实现： -->
     <!-- 开启电话功能： -->
     <a href="tel:123456">123456</a> 
@@ -89,5 +89,44 @@
     <!-- 　　和英文输入默认自动首字母大写那样，IOS还做了一个功能，默认输入法会开启自动修正输入内容，这样的话，用户经常要操作两次。如果不希望开启此功能，我们可以通过input标签属性来关闭掉： -->
     <input type="text" autocorrect="off" />
 
+    <span id="tel" style="position: fixed;bottom: 10px;right: 10px;width: 50px;height: 50px;background-color: #212;border-radius: 50%;display:none;"></span>
+
+	<textarea name="txt" id="txt" cols="30" rows="10" style="width: 100px;">和英文输入默认自动首字母大写那样，IOS还做了一个功能，默认输入法会开启自动修正输入内容，这样的话，用户经常要操作两次。如果不希望开启此功能，我们可以通过input标签属性来关闭掉</textarea>
+	<script>
+		// window.onload=function(){
+			function scroll1(elementName,nav_span) {
+				var x =document.getElementById(elementName);
+				if (x.addEventListener) {
+					x.addEventListener("scroll",myfunction);
+				} else if(x.attachEvent) {
+					x.attachEvent("scroll",myfunction);
+				}
+				function myfunction(){				
+					var top = x.scrollTop;
+					if(top>=10){
+						document.getElementById(nav_span).style.display="block";
+					}else{
+						document.getElementById(nav_span).style.display="none";
+					}
+				}			
+			};
+			window.onscroll = function() {
+				scroll1("body","tel");
+			};
+		// }
+		
+
+		//修改通信协议类型
+		// ;(function() {
+  //       	var protocol = window.location.protocol;
+  //       	var href = window.location.href;
+  //       	if (protocol == "http:") {
+  //       	    href = href.replace("http", "https");
+  //       	    href = href.replace("www.kingroot.net", "kingroot.net");
+  //       	    window.location.href = href;
+  //       	}
+  //   	}());
+    
+	</script>
 </body>
 </html>

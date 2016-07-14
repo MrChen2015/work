@@ -11,8 +11,8 @@ input,
 textarea,
 select,
 option {
-　　border: 0; /* 方法1 */
-　　-webkit-appearance: none; /* 方法2 */
+	border: 0; /* 方法1 */
+	-webkit-appearance: none; /* 方法2 */
 }
 /*如何禁止保存或拷贝图像（IOS）*/
 img { -webkit-touch-callout: none; }
