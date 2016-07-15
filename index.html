@@ -27,18 +27,36 @@
     <!-- 网页图标 -->
     <link rel="shortcut icon" href="assets/favicon.ico">
     <link rel="stylesheet" href="vendor/flexible/flexible.css">
-    <link rel="stylesheet" href="src/css/vendor/normalize.css">
+    <link rel="stylesheet" href="vendor/normalize/normalize.css">
     <link rel="stylesheet" href="src/css/base.css">
     <link rel="stylesheet" href="src/css/common.css">
     <link rel="stylesheet" href="src/css/index.css">
     <script src="vendor/flexible/flexible.js" defer async="true"></script>
+    <style>
+        html {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
 </head>
 <body id="body" style="height:100%;width:100%;background:#212;position:relative;">
 
     <a href="#1" style="width:30%;height:50px;background:#313;position:absolute;bottom:60px;left:35%;"></a>
     <div style="display:-webkit-box;width:100%;height:40px;position:fixed;bottom:0;left:0;">
-        <a href="#2" style="display: inline-block;-webkit-box-flex:1;width:50%;box-sizing:border-box;">活动规则</a>
-        <a href="#3" style="display: inline-block;-webkit-box-flex:1;width:50%;box-sizing:border-box;">砍价排行榜</a>
+        <a href="#2" style="    display: block;
+    -webkit-box-flex: 1;
+    width: 50%;
+    box-sizing: border-box;
+    font-size: 15px;
+    line-height: 40px;
+    text-align: center;">活动规则</a>
+        <a href="#3" style="    display: block;
+    -webkit-box-flex: 1;
+    width: 50%;
+    box-sizing: border-box;
+    font-size: 15px;
+    line-height: 40px;
+    text-align: center;">砍价排行榜</a>
     </div>
 </body>
 </html>
