@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <title>Document</title>
+    <meta charset="UTF-8">
+    <!-- 保持IE及谷歌版本最新 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <!-- 调整页面窗口自动调整到设备宽度，并禁止用户及缩放页面 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!-- 只有(iphone)会识别，禁止对电话号码的自动识别 -->
+    <meta name="format-detection" content="telephone=no">
+    <!-- (Android)禁止对邮箱自动识别 -->
+    <meta name="format-detection" content="email=no">    
+    <!-- <meta name="keywords" content="doc,doc,doc"> -->
+    <!-- <meta name="description" content="市地税局doc,市地税局doc,市地税局doc"> -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <!-- 禁止百度转码 -->
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+
+    <!--下面三个是清除缓存 安卓微信浏览器缓存严重又无刷新；这个方法调试的时候很方便-->
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+
+    <!-- 网页图标 -->
+    <link rel="shortcut icon" href="assets/favicon.ico">
+    <link rel="stylesheet" href="vendor/flexible/flexible.css">
+    <link rel="stylesheet" href="src/css/vendor/normalize.css">
+    <link rel="stylesheet" href="src/css/base.css">
+    <link rel="stylesheet" href="src/css/common.css">
+    <link rel="stylesheet" href="src/css/index.css">
+    <script src="vendor/flexible/flexible.js" defer async="true"></script>
+</head>
+<body id="body" style="height: 1000px;">
+
+    <a href="tel:123456">123456</a> 
+    <a href="sms:123456">123456</a>
+    <input type="tel">
+    <input type="text" autocapitalize="off" />
+    <input type="text" autocorrect="off" />
+    <span id="tel" style="position: fixed;bottom: 10px;right: 10px;width: 50px;height: 50px;background-color: #212;border-radius: 50%;display:none;"></span>
+
+	<textarea name="txt" id="txt" cols="30" rows="10" style="width: 100px;">和英文输入默认自动首字母大写那样，IOS还做了一个功能，默认输入法会开启自动修正输入内容，这样的话，用户经常要操作两次。如果不希望开启此功能，我们可以通过input标签属性来关闭掉</textarea>
+	<script>
+		// window.onload=function(){
+			function scroll1(elementName,nav_span) {
+				var x =document.getElementById(elementName);
+				if (x.addEventListener) {
+					x.addEventListener("scroll",myfunction);
+				} else if(x.attachEvent) {
+					x.attachEvent("scroll",myfunction);
+				}
+				function myfunction(){				
+					var top = x.scrollTop;
+					if(top>=10){
+						document.getElementById(nav_span).style.display="block";
+					}else{
+						document.getElementById(nav_span).style.display="none";
+					}
+				}			
+			};
+		// }
+    
+	</script>
+</body>
+</html>
