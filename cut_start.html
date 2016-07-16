@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <title>进入砍价</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="email=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <!--下面三个是清除缓存 安卓微信浏览器缓存严重又无刷新；这个方法调试的时候很方便-->
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+
+    <!-- 网页图标 -->
+    <link rel="shortcut icon" href="assets/favicon.ico">
+    <link rel="stylesheet" href="vendor/flexible/flexible.css">
+    <link rel="stylesheet" href="vendor/normalize/normalize.css">
+    <link rel="stylesheet" href="src/css/base.css">
+    <link rel="stylesheet" href="src/css/common.css">
+    <link rel="stylesheet" href="src/css/index.css">
+    <link rel="stylesheet" href="vendor/swiper/swiper.min.css">
+    <script src="vendor/flexible/flexible.js" defer async="true"></script>
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <style>
+        html {
+            width: 100%;
+            min-height: 100%;
+            background-color: #e6e6e6;
+        }
+        body {
+            height:100%;
+            width:100%;
+            position:relative;
+            background-color: #fdfdfd;
+        }
+        .disbox{
+            display:-webkit-box;
+            /*width:100%;*/
+        }
+        .disbox-flex-1-2{
+            -webkit-box-flex: 1;
+            width: 50%;
+            display: block;
+            text-align: center;
+        }
+        .rank-list-item>img {
+            width: 1.390625rem;
+            height: 1.40625rem;
+            border-radius: 50%;
+        }
+        .rank-list-item{
+            background-color: #fdfdfd;
+            font-size: 0.4rem;
+            padding: 0.25rem 0.5rem;;
+            border-bottom: 0.02rem solid #e7e7e7;
+        }
+        .rank-title span {
+            font-size: 0.4rem;
+        }
+        .txt-overflow{
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        .rank-list-item>span {
+            line-height: 1.40625rem;
+            width: 1.28125rem;
+            text-align: right;
+        }
+        .rank-list-item>div {
+            margin-left: 0.35rem;
+            width: 7.21875rem;
+            font-size: 0.375rem;
+        }
+        .rank-list-item>div strong{
+           font-size: 0.4375rem;
+        }
+        .rank-list-item>div>* {
+            line-height: 0.703125rem;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        .rank-list-item>*{
+            display: block;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        .clearfix:before,.clearfix:after{
+            content: "";
+            display: table;
+            clear: both;
+        }
+        .swiper-slide img {
+            height: 5.9375rem;
+            width: 100%;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="images/cut_start_shop.png" alt="璞竹砍价商品"></div>
+        <div class="swiper-slide"><img src="images/cut_start_shop.png" alt="璞竹砍价商品"></div>
+        <div class="swiper-slide"><img src="images/cut_start_shop.png" alt="璞竹砍价商品"></div>
+    </div>
+        <div class="swiper-pagination"></div>
+    </div>
+    <div style="border-radius: 0.5rem;width: 8.671875rem;margin: 0.5rem auto 0.2rem auto;height: 0.5rem;overflow: hidden;border: 0.025rem solid #212;box-sizing: border-box;">
+        <div style="width: 60%;height: 100%;background: url(images/progress_bg.png) repeat center;background-size: 0.7rem;"></div>
+    </div>
+    <div style="padding: 0.25rem 5%;" class="clearfix"><span style="float: left;font-size: 0.46875rem;">当前价格：80元</span><span style="float: right;font-size: 0.46875rem;">0元</span></div>
+
+    <a href="#1" style="background: url(images/cut_start_btn_friend.png) no-repeat;background-size: 100%;height: 0.671875rem;width: 2.671875rem;margin-left: 3.65625rem;display: block;margin-bottom: 0.25rem;"></a>
+    <a href="#2" style="background: url(images/cut_start_btn_friend.png) no-repeat;background-size: 100%;height: 0.671875rem;width: 2.671875rem;margin-left: 3.65625rem;display: block;margin-bottom: 0.25rem;"></a>
+    <div class="disbox" style="width: 60%;margin: 0.25rem auto;">
+        <a class="js-btn-rule disbox-flex-1-2" href="javascript:;" style="font-size: 0.4375rem;color: #000;text-decoration: underline;"><strong>活动规则</strong></a>
+        <a class="disbox-flex-1-2" href="rank.html" style="font-size: 0.4375rem;color: #000;text-decoration: underline;"><strong>砍价排行榜</strong></a>
+    </div>
+    <p style="font-size: 0.46875rem;padding-left: 0.5rem;"><strong>帮砍记录</strong></p>
+    <div class="rank-list">
+    <div class="rank-list-item clearfix disbox">
+        <img src="images/index_bg.jpg" alt="砍价排行头像" >
+        <div>
+            <h3><strong>砍价小能手</strong></h3>
+            <p>已经在活动中省下了50元</p>
+        </div>
+    </div>
+    <div class="rank-list-item clearfix disbox">
+        <img src="images/index_bg.jpg" alt="砍价排行头像" >
+        <div>
+            <h3><strong>砍价小能手</strong></h3>
+            <p>已经在活动中省下了50元</p>
+        </div>
+    </div>
+    <div class="rank-list-item clearfix disbox">
+        <img src="images/index_bg.jpg" alt="砍价排行头像" >
+        <div>
+            <h3><strong>砍价小能手</strong></h3>
+            <p>已经在活动中省下了50元</p>
+        </div>
+    </div>
+    <div class="rank-list-item clearfix disbox">
+        <img src="images/index_bg.jpg" alt="砍价排行头像" >
+        <div>
+            <h3><strong>砍价小能手</strong></h3>
+            <p>已经在活动中省下了50元</p>
+        </div>
+    </div>
+    <div class="rank-list-item clearfix disbox">
+        <img src="images/index_bg.jpg" alt="砍价排行头像" >
+        <div>
+            <h3><strong>砍价小能手</strong></h3>
+            <p>已经在活动中省下了50元</p>
+        </div>
+    </div>
+</div>
+
+    <div class="js-rule" style="position: absolute;top: 0;left: 0;width: 100%;height: 100%;z-index: 2;background-color: rgba(0,0,0,.7);display: none;">
+        <img src="images/rule.png"  style="width: 7.515625rem;height: 9.9375rem;position: absolute;top:2.53125rem;left:1.40625rem;z-index: 3;">
+        <span class="js-close" style="display: block;position: absolute;top: 2.5rem;right: 1.1rem;z-index: 3;width: 1rem;height: 1rem;"></span>
+        <div class="js-" style="width: 6.7rem;height: 7rem;position: absolute;top: 5rem;left: 1.8rem;z-index: 3;font-size: 0.4rem;overflow-y: auto;">
+            <p>1.收到款付了款酸辣粉了上的客服经理说，数据库登录福建省是，深刻的积分</p>
+            <p>2.收到款付了款酸辣粉了上的客服经理说，数据库登录福建省是，深刻的积分</p>
+            <p>3.收到款付了款酸辣粉了上的客服经理说，数据库登录福建省是，深刻的积分</p>
+            <p>4.收到款付了款酸辣粉了上的客服经理说，数据库登录福建省是，深刻的积分</p>
+        </div>
+    </div>
+
+    <script src="vendor/swiper/swiper.jquery.min.js"></script>
+    <script>
+        $(function () {
+            var mySwiper = new Swiper ('.swiper-container', {
+                loop: true,
+                // 如果需要分页器
+                pagination: '.swiper-pagination'
+            });
+            $(".js-btn-rule").on("click",function () {
+                $(".js-rule").show();
+            });
+            $(".js-close").on("click",function () {
+                $(".js-rule").hide();
+                return false;
+            });
+        })
+    </script>
+</body>
+</html>
