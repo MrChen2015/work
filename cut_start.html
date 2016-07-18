@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="src/css/common.css">
     <link rel="stylesheet" href="src/css/index.css">
     <link rel="stylesheet" href="vendor/swiper/swiper.min.css">
-    <script src="vendor/flexible/flexible.js" defer async="true"></script>
+    <script src="vendor/flexible/flexible.js"></script>
     <script src="vendor/jquery/jquery.min.js"></script>
     <style>
         html {
@@ -84,6 +84,11 @@
             text-overflow: ellipsis;
             white-space: nowrap;
         }
+        .rank-list-item>div>p{
+            font-size:0.375rem ;
+            color: #808080;
+        ;
+        }
         .rank-list-item>*{
             display: block;
             overflow: hidden;
@@ -103,6 +108,7 @@
     </style>
 </head>
 <body>
+    <div class="js-friends" style="position: fixed;width: 100%;height: 100%;left: 0;top: 0;z-index:2;background-color: rgba(0,0,0,0.7);display: none;"><p style="color: #fff;font-size: 0.53125rem;text-align: right;margin-right:1.25rem;margin-top: 0.40625rem;">快找朋友帮你砍价吧</p></div>
     <div class="swiper-container">
         <div class="swiper-wrapper">
         <div class="swiper-slide"><img src="images/cut_start_shop.png" alt="璞竹砍价商品"></div>
@@ -115,14 +121,16 @@
         <div style="width: 60%;height: 100%;background: url(images/progress_bg.png) repeat center;background-size: 0.7rem;"></div>
     </div>
     <div style="padding: 0.25rem 5%;" class="clearfix"><span style="float: left;font-size: 0.46875rem;">当前价格：80元</span><span style="float: right;font-size: 0.46875rem;">0元</span></div>
-
-    <a href="#1" style="background: url(images/cut_start_btn_friend.png) no-repeat;background-size: 100%;height: 0.671875rem;width: 2.671875rem;margin-left: 3.65625rem;display: block;margin-bottom: 0.25rem;"></a>
-    <a href="#2" style="background: url(images/cut_start_btn_friend.png) no-repeat;background-size: 100%;height: 0.671875rem;width: 2.671875rem;margin-left: 3.65625rem;display: block;margin-bottom: 0.25rem;"></a>
+    <p  style="padding: 0.25rem 5%;font-size: 0.4375rem;color: #808080;">你的小伙伴XXXX邀请你帮他/她砍价，快点帮ta一把吧！</p>
+    <a class="btn-friend" href="javascript:;" style="background: url(images/cut_start_btn_friend.png) no-repeat;background-size: 100%;height: 0.671875rem;width: 2.671875rem;margin-left: 3.65625rem;display: block;margin-bottom: 0.25rem;"></a>
+    <a href="yhq.html" style="background: url(images/cut_start_btn_yhq.png) no-repeat;background-size: 100%;height: 0.671875rem;width: 2.671875rem;margin-left: 3.65625rem;display: block;margin-bottom:0.53125rem;"></a>
+    <a href="#2" style="background: url(images/cut_start_btn_helpcut.png) no-repeat;background-size: 100%;height: 0.671875rem;width: 2.671875rem;margin-left: 3.65625rem;display: block;margin-bottom:0.25rem;"></a>
+    <a href="shop_info.html" style="background: url(images/cut_start_btn_metoo.png) no-repeat;background-size: 100%;height: 0.671875rem;width: 2.671875rem;margin-left: 3.65625rem;display: block;margin-bottom:0.53125rem;"></a>
     <div class="disbox" style="width: 60%;margin: 0.25rem auto;">
         <a class="js-btn-rule disbox-flex-1-2" href="javascript:;" style="font-size: 0.4375rem;color: #000;text-decoration: underline;"><strong>活动规则</strong></a>
         <a class="disbox-flex-1-2" href="rank.html" style="font-size: 0.4375rem;color: #000;text-decoration: underline;"><strong>砍价排行榜</strong></a>
     </div>
-    <p style="font-size: 0.46875rem;padding-left: 0.5rem;"><strong>帮砍记录</strong></p>
+    <p style="font-size: 0.46875rem;padding: 0.25rem 0.5rem;"><strong>帮砍记录</strong></p>
     <div class="rank-list">
     <div class="rank-list-item clearfix disbox">
         <img src="images/index_bg.jpg" alt="砍价排行头像" >
@@ -161,7 +169,7 @@
     </div>
 </div>
 
-    <div class="js-rule" style="position: absolute;top: 0;left: 0;width: 100%;height: 100%;z-index: 2;background-color: rgba(0,0,0,.7);display: none;">
+    <div class="js-rule" style="position: fixed;top: 0;left: 0;width: 100%;height: 100%;z-index: 2;background-color: rgba(0,0,0,.7);display: none;">
         <img src="images/rule.png"  style="width: 7.515625rem;height: 9.9375rem;position: absolute;top:2.53125rem;left:1.40625rem;z-index: 3;">
         <span class="js-close" style="display: block;position: absolute;top: 2.5rem;right: 1.1rem;z-index: 3;width: 1rem;height: 1rem;"></span>
         <div class="js-" style="width: 6.7rem;height: 7rem;position: absolute;top: 5rem;left: 1.8rem;z-index: 3;font-size: 0.4rem;overflow-y: auto;">
@@ -186,6 +194,12 @@
             $(".js-close").on("click",function () {
                 $(".js-rule").hide();
                 return false;
+            });
+            $(".btn-friend").on("click",function () {
+                $(".js-friends").show();
+            });
+            $(".js-friends").on("click",function () {
+                $(this).hide();
             });
         })
     </script>
