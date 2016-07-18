@@ -1,5 +1,5 @@
 /*在有滚动的地方加上下面这段css，滑动起来就会特别的顺畅。而不会出现那种一卡一卡的现象。主要还是针对ios机*/
-.fast-scroll {
+body {
     overflow: auto; /* auto | scroll */
     -webkit-overflow-scrolling: touch;
 }

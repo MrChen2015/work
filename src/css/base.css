@@ -22,7 +22,7 @@ a,
 button,
 input,
 textarea {
-	-webkit-tap-highlight-color: rgba(0,0,0,0;);
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 /*伪元素改变number类型input框的默认样式*/
 input[type=number]::-webkit-textfield-decoration-container {
