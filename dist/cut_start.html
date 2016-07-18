@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <title>进入砍价</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="email=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <!--下面三个是清除缓存 安卓微信浏览器缓存严重又无刷新；这个方法调试的时候很方便-->
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+
+    <!-- 网页图标 -->
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/flexible.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+
+    <link rel="stylesheet" href="css/cut.css">
+
+    <script src="js/flexible.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/swiper.jquery.min.js"></script>
+
+</head>
+<body>
+    <div class="js-friends cut">
+    	<p>快找朋友帮你砍价吧</p>
+    </div>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="images/cut_start_shop.png" alt="璞竹砍价商品"></div>
+        <div class="swiper-slide"><img src="images/cut_start_shop.png" alt="璞竹砍价商品"></div>
+        <div class="swiper-slide"><img src="images/cut_start_shop.png" alt="璞竹砍价商品"></div>
+    </div>
+        <div class="swiper-pagination"></div>
+    </div>
+    <div class="cut-d1">
+        <div></div>
+    </div>
+    <div class="cut-d2 clearfix">
+    	<span class="cut-d2-left">当前价格：80元</span>
+    	<span class="cut-d2-right">0元</span>
+    </div>
+    <p class="cut-p1">你的小伙伴XXXX邀请你帮他/她砍价，快点帮ta一把吧！</p>
+    <a class="btn-a1 btn-friend" href="javascript:;"></a>
+    <a class="btn-a2" href="yhq.html"></a>
+    <a class="btn-a3" href="#2"></a>
+    <a class="btn-a4" href="shop_info.html"></a>
+    <div class="cut-d3 disbox">
+        <a class="js-btn-rule disbox-flex-1-2" href="javascript:;"><strong>活动规则</strong></a>
+        <a class="disbox-flex-1-2" href="rank.html"><strong>砍价排行榜</strong></a>
+    </div>
+    <p class="cut-p2"><strong>帮砍记录</strong></p>
+    <div class="rank-list">
+    	<div class="rank-list-item clearfix disbox">
+        <img src="images/index_bg.jpg" alt="砍价排行头像" >
+        <div>
+            <h3><strong>砍价小能手</strong></h3>
+            <p>已经在活动中省下了50元</p>
+        </div>
+    	</div>
+    	<div class="rank-list-item clearfix disbox">
+        <img src="images/index_bg.jpg" alt="砍价排行头像" >
+        <div>
+            <h3><strong>砍价小能手</strong></h3>
+            <p>已经在活动中省下了50元</p>
+        </div>
+    	</div>
+    	<div class="rank-list-item clearfix disbox">
+        <img src="images/index_bg.jpg" alt="砍价排行头像" >
+        <div>
+            <h3><strong>砍价小能手</strong></h3>
+            <p>已经在活动中省下了50元</p>
+        </div>
+    	</div>
+    	<div class="rank-list-item clearfix disbox">
+        <img src="images/index_bg.jpg" alt="砍价排行头像" >
+        <div>
+            <h3><strong>砍价小能手</strong></h3>
+            <p>已经在活动中省下了50元</p>
+        </div>
+    	</div>
+    	<div class="rank-list-item clearfix disbox">
+        <img src="images/index_bg.jpg" alt="砍价排行头像" >
+        <div>
+            <h3><strong>砍价小能手</strong></h3>
+            <p>已经在活动中省下了50元</p>
+        </div>
+    	</div>
+	</div>
+
+    <div class="js-rule cut-p3">
+        <img src="images/rule.png">
+        <span class="js-close"></span>
+        <div class="js-">
+            <p>1.收到款付了款酸辣粉了上的客服经理说，数据库登录福建省是，深刻的积分</p>
+            <p>2.收到款付了款酸辣粉了上的客服经理说，数据库登录福建省是，深刻的积分</p>
+            <p>3.收到款付了款酸辣粉了上的客服经理说，数据库登录福建省是，深刻的积分</p>
+            <p>4.收到款付了款酸辣粉了上的客服经理说，数据库登录福建省是，深刻的积分</p>
+        </div>
+    </div>
+
+    
+    <script>
+        $(function () {
+            var mySwiper = new Swiper ('.swiper-container', {
+                loop: true,
+                // 如果需要分页器
+                pagination: '.swiper-pagination'
+            });
+            $(".js-btn-rule").on("click",function () {
+                $(".js-rule").show();
+            });
+            $(".js-close").on("click",function () {
+                $(".js-rule").hide();
+                return false;
+            });
+            $(".btn-friend").on("click",function () {
+                $(".js-friends").show();
+            });
+            $(".js-friends").on("click",function () {
+                $(this).hide();
+            });
+        })
+    </script>
+</body>
+</html>

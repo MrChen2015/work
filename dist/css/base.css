@@ -1,0 +1,10 @@
+html{　  -webkit-text-size-adjust:100%;}
+body{font-family:"Helvetica Neue",Helvetica,STHeiTi,sans-serif;}
+input,option,select,textarea{　　border:0;　　-webkit-appearance:none;}
+img{-webkit-touch-callout:none;}
+a,button,input,textarea{-webkit-tap-highlight-color:transparent;}
+input[type=number]::-webkit-textfield-decoration-container{background-color:transparent;}
+input[type=number]::-webkit-inner-spin-button{-webkit-appearance:none;}
+input[type=number]::-webkit-outer-spin-button{-webkit-appearance:none;}
+input::-webkit-input-placeholder{color:#AAA;}
+input:focus::-webkit-input-placeholder{color:#EEE;}
