@@ -1,62 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c080067a-3045-41b7-8fab-4d6b22162a13" name="Default" comment="asdds">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.jshintrc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/css/hello.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/js/main.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/js/main.min.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/css/base.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/css/common.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/css/cut.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/css/flexible.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/css/index.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/css/main.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/css/normalize.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/css/pay_suc.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/css/rank.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/css/shopinfo.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/css/swiper.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/css/yhq.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/cut_start.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/js/flexible.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/js/hah.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/js/jquery.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/js/swiper.jquery.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/pay_success.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/rank.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/shop_info.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/yhq.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/btn_wxpay.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/cut_start_btn_friend.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/cut_start_btn_helpcut.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/cut_start_btn_metoo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/cut_start_btn_yhq.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/cut_start_shop.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/ewm.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/index_bg.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/index_btn.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/pay_suc_bg.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/pay_suc_btn.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/progress_bg.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/rule.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/rule.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/yhq_now_btn.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/yhq_yz.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/coffee/gulpfile.coffee" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/4b14d240aa51a303907a2a4fdffe156c96d07a84/main.scssc" afterPath="$PROJECT_DIR$/.sass-cache/4b14d240aa51a303907a2a4fdffe156c96d07a84/main.scssc" />
+    <list default="true" id="c080067a-3045-41b7-8fab-4d6b22162a13" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.sass-cache/a435f8a88e3325d9c375d8cf9bc99dbd68b2866c/main.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/btn_wxpay.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/cut_start_btn_friend.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/cut_start_btn_helpcut.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/cut_start_btn_metoo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/cut_start_btn_yhq.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/cut_start_shop.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/ewm.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/index_bg.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/index_btn.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/pay_suc_bg.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/pay_suc_btn.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/progress_bg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/rule.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/rule.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/yhq_now_btn.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/yhq_yz.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zip/work-201607211738.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zip/work-201607211747.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zip/workla-201607211747.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/main.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/css/hello.css" afterPath="$PROJECT_DIR$/dist/css/hello.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/index.html" afterPath="$PROJECT_DIR$/dist/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gulpfile.js" afterPath="$PROJECT_DIR$/gulpfile.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/coffee/base.coffee" afterPath="$PROJECT_DIR$/src/coffee/base.coffee" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/css/common.css" afterPath="$PROJECT_DIR$/src/css/common.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/jade/index.jade" afterPath="$PROJECT_DIR$/src/jade/index.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/base.js" afterPath="$PROJECT_DIR$/src/js/base.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/config.js" afterPath="$PROJECT_DIR$/src/js/config.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sass/main.scss" afterPath="$PROJECT_DIR$/src/sass/main.scss" />
     </list>
     <ignored path="work.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -80,21 +47,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="gulpfile.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="gulpfile.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/gulpfile.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
+            <state relative-caret-position="1250">
               <caret line="96" column="3" selection-start-line="96" selection-start-column="3" selection-end-line="96" selection-end-column="3" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="hello.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="hello.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dist/css/hello.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="57">
-              <caret line="3" column="1" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+            <state relative-caret-position="418">
+              <caret line="22" column="6" selection-start-line="22" selection-start-column="6" selection-end-line="22" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -214,8 +181,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="897" />
-    <option name="y" value="125" />
+    <option name="x" value="1011" />
+    <option name="y" value="133" />
     <option name="width" value="1294" />
     <option name="height" value="1047" />
   </component>
@@ -261,20 +228,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="work" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="work" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="work" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dist" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -394,7 +347,7 @@
       <workItem from="1469063494978" duration="17204000" />
       <workItem from="1469096500033" duration="360000" />
       <workItem from="1469152821168" duration="333000" />
-      <workItem from="3362609647210" duration="3081000" />
+      <workItem from="3362609647210" duration="3216000" />
     </task>
     <task id="LOCAL-00001" summary="asdds">
       <created>1469157069882</created>
@@ -403,11 +356,18 @@
       <option name="project" value="LOCAL" />
       <updated>1469157069882</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="asdds">
+      <created>1469157217275</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1469157217275</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="82246000" />
+    <option name="totallyTimeSpent" value="82381000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -419,11 +379,11 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="897" y="125" width="1294" height="1047" extended-state="0" />
+    <frame x="1011" y="133" width="1294" height="1047" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.46735668" sideWeight="0.56736034" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.46735668" sideWeight="0.43263966" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.46735668" sideWeight="0.43263966" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32896176" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6955093" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32896176" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -734,7 +694,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/gulpfile.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
+        <state relative-caret-position="1250">
           <caret line="96" column="3" selection-start-line="96" selection-start-column="3" selection-end-line="96" selection-end-column="3" />
           <folding />
         </state>
@@ -750,8 +710,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/dist/css/hello.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="1" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+        <state relative-caret-position="418">
+          <caret line="22" column="6" selection-start-line="22" selection-start-column="6" selection-end-line="22" selection-end-column="6" />
           <folding />
         </state>
       </provider>
