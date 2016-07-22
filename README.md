@@ -41,7 +41,7 @@ asdfsdf
  
  ![image](http://www.placehold.it/330/440/0c0&txt=*asdf 330X330*)
  
- ```
+ ```javascript
     function(){
        alert("helloworld");
     }
