@@ -1,6 +1,6 @@
-/**
- * Created by Administrator on 2016/7/18.
- */
-;(function(){
-    alert("base.js");
-}())
+(function() {
+  (function(x, y) {
+    return alert(x + y);
+  });
+
+}).call(this);

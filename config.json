@@ -1,0 +1,14 @@
+{
+  "project":"workla",
+  "sftp":{
+    "host":"",
+    "port":"",
+    "user":"",
+    "key":"",
+    "remotePath":""
+  },
+  "localserver":{
+    "host":"127.0.0.1",
+    "port":"8081"
+  }
+}
